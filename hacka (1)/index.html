@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Details | Hardware Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            background-image: url('backs.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-position: center;
+            font-family: Arial, sans-serif 
+        }
+
+        
+        .hero {
+            position: relative;
+            background-image: url('backs.jpeg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white; 
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: -1; 
+        }
+
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        
+        section {
+            padding: 20px 0;
+        }
+
+        
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>SRISHTI ABRASIVE</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Owner Section -->
+    <section>
+        <div class="explore-container">
+            <div class="owner-details-card">
+                <img class="owner-details-pic" src="pic.png" alt="Owner's Photo">
+                <p class="owner">Mrs. Shobha Devi</p>
+                <p class="designation">Founder of Srishti Abrasive</p>
+            </div>
+        </div>
+    </section><br><br>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>All Types of Flap Wheel, Mops, Cup Wheel etc.</h2>
+            <p>Deals in: Emmery Belts, Taper Wheel, Water Proof Paper & All types of Polishing Material.</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <h2>PRODUCTS</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="mop123.png" alt="Mop Wheel">
+                    <h3>Mop-wheel</h3>
+                    <p>Rs.599</p>
+                </div>
+                <div class="product">
+                    <img src="flapy.jpeg" alt="Flap Wheel">
+                    <h3>Flap-wheel</h3>
+                    <p>Rs.399</p>
+                </div>
+                <div class="product">
+                    <img src="woven.jpeg" alt="Woven Wheel">
+                    <h3>Woven-wheel</h3>
+                    <p>Rs.499</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            
+            <form action="thank.html" method="get" class="contact">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+        
+                <button type="submit">Submit</a></button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy;2024 Srishti Abrasive. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
